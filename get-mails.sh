@@ -23,7 +23,12 @@ for m in $(cat meps-urls); do
 done
 
 # get the email addresses from the MEP pages
-grep mailto *html|cut -d\" -f2|cut -d: -f2-|rev|sed 's/\]ta\[/@/g'|sed 's/\]tod\[/\./g' > emails
+echo "e-mail;Country" > emails;
+for i in *html; do
+	email=$(grep mailto $i|cut -d\" -f2|cut -d: -f2-|rev|sed 's/\]ta\[/@/g'|sed 's/\]tod\[/\./g'|head -n 1);
+	country=$(grep nationality $i|cut -d\> -f2);
+	echo "$email;$country" >> emails;
+done;
 
 # cleanup
 if [ "$DEBUG" != true ]; then
