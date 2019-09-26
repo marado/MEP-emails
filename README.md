@@ -6,4 +6,6 @@ As weird as it can sound, the European Parliament isn't very fond of spreading a
 
 This is a simple and ugly hack, but running this script will allow you to have a list of all MEPs email addresses.
 
-Pull requests, issues, enhancements and ideas are most welcome.
+## Notes
+* Pull requests, issues, enhancements and ideas are most welcome.
+* This script uses xml2csv, which is part of [xmlutils](https://pypi.org/project/xmlutils/).
