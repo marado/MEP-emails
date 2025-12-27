@@ -6,7 +6,9 @@ As weird as it can sound, the European Parliament isn't very fond of spreading a
 
 This is a simple and ugly hack, but running this script will allow you to have a list of all MEPs email addresses.
 
+If you don't need to be certain you have the most uptodate data, you might want to get an already generated email list [from Wikidata](https://w.wiki/HDZr).
+
 ## Notes
 * Pull requests, issues, enhancements and ideas are most welcome.
 * This script uses xml2csv, which is part of [xmlutils](https://pypi.org/project/xmlutils/).
-* There is a WIP script, `wikidata.sh`, which will help us see if there's e-mail address info on the euparl website that isn't on wikidata yet (a step to populate that info there, if there isn't).
+* There is a WIP script, `wikidata.sh`, which can be used to help update the MEP email info on wikidata.
